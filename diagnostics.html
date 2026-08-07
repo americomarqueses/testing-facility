@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diagnostics — Mirage Testing Facility</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="wireframe.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <button type="button" class="sidebar-backdrop" id="sidebar-backdrop" aria-label="Close navigation"></button>
+    <aside class="sidebar" id="app-sidebar">
+      <div class="sidebar-top">
+        <button type="button" class="sidebar-toggle" id="sidebar-toggle" aria-controls="app-sidebar" aria-expanded="true" aria-label="Collapse navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+        </button>
+        <a class="sidebar-brand" href="index.html">
+          <img src="https://i.imgur.com/tvZMJ0I.png" alt="AirAsia" width="32" height="32" />
+          <span>Testing Facility</span>
+        </a>
+      </div>
+      <div class="sidebar-env">Environment: Staging-GCP</div>
+      <nav class="sidebar-nav" aria-label="Primary">
+        <a class="nav-item" data-nav href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Home Overview
+        </a>
+        <a class="nav-item" data-nav href="config.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+          Scenario Config
+        </a>
+        <a class="nav-item" data-nav href="telemetry.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+          Live Telemetry
+        </a>
+        <a class="nav-item" data-nav href="sync-analytics.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg>
+          Dual-Sync Analytics
+        </a>
+        <a class="nav-item" data-nav href="diagnostics.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+          Diagnostics
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <a class="nav-item" href="login.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          Logout
+        </a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="main-header">
+        <div>
+          <h1>Diagnostics &amp; Breaking Point Analysis</h1>
+          <p class="muted text-sm" style="margin:4px 0 0">Post-test evaluation from GCS summary JSON (sample wireframe).</p>
+        </div>
+        <div class="header-meta">
+          <span class="badge badge-warn">Bottleneck detected</span>
+        </div>
+      </div>
+
+      <div class="main-body">
+        <section class="card card-featured">
+          <h2 class="section-title">Automated bottleneck evaluation</h2>
+          <p class="section-sub">Primary limitation inferred from run summary thresholds.</p>
+          <div class="alert-warn">
+            <strong>Status: BOTTLENECK DETECTED</strong> — Primary limitation: Async Replay Engine Bottleneck.
+            <div style="margin-top:8px">
+              Details: PNR Sync Latency (T<sub>sync</sub>) exceeded 10s at 3,200 concurrent Booking VUs.
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2 class="section-title">Component degradation breakdown</h2>
+          <p class="section-sub">Layer-level root cause analysis from the architecture plan sample.</p>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Layer affected</th>
+                <th>Root cause analysis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Navitaire API session lock</td>
+                <td>Lock contention on <code>/ssrs</code> during commit.</td>
+              </tr>
+              <tr>
+                <td>Pub/Sub mutation consumer</td>
+                <td>Worker pool under-provisioned for &gt;3k RPS.</td>
+              </tr>
+              <tr>
+                <td>Redis pending-ops flush</td>
+                <td>Atomic flush lag under sustained commit spikes (sample).</td>
+              </tr>
+              <tr>
+                <td>Echo suppression</td>
+                <td>Within bounds — 99.2% inbound skips (no leak detected).</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <div class="grid-2">
+          <section class="card">
+            <h2 class="section-title">Suggested next actions</h2>
+            <ul class="text-sm" style="margin:0; padding-left:18px; color:var(--surface-800); line-height:1.7">
+              <li>Scale <code>mirage-navitaire-sync</code> worker replicas before next stress run.</li>
+              <li>Lower Booking VUs or enable step-ramp with longer hold at 2.5k.</li>
+              <li>Re-run dry validation against Navitaire session pool limits.</li>
+            </ul>
+          </section>
+          <section class="card">
+            <h2 class="section-title">Circuit breaker hits (sample)</h2>
+            <div class="metric-row" style="flex-direction:column; align-items:flex-start; gap:10px">
+              <span>Max ingestion error rate (5%): <strong>not tripped</strong></span>
+              <span>Max Pub/Sub backlog (50k): <strong>not tripped</strong></span>
+              <span>Max PNR sync lag (60s): <strong>approaching</strong> (p99 16.2s)</span>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="wireframe.js"></script>
+</body>
+</html>

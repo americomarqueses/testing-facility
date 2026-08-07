@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scenario Config — Mirage Testing Facility</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="wireframe.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <button type="button" class="sidebar-backdrop" id="sidebar-backdrop" aria-label="Close navigation"></button>
+    <aside class="sidebar" id="app-sidebar">
+      <div class="sidebar-top">
+        <button type="button" class="sidebar-toggle" id="sidebar-toggle" aria-controls="app-sidebar" aria-expanded="true" aria-label="Collapse navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+        </button>
+        <a class="sidebar-brand" href="index.html">
+          <img src="https://i.imgur.com/tvZMJ0I.png" alt="AirAsia" width="32" height="32" />
+          <span>Testing Facility</span>
+        </a>
+      </div>
+      <div class="sidebar-env">Environment: Staging-GCP</div>
+      <nav class="sidebar-nav" aria-label="Primary">
+        <a class="nav-item" data-nav href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Home Overview
+        </a>
+        <a class="nav-item" data-nav href="config.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+          Scenario Config
+        </a>
+        <a class="nav-item" data-nav href="telemetry.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+          Live Telemetry
+        </a>
+        <a class="nav-item" data-nav href="sync-analytics.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg>
+          Dual-Sync Analytics
+        </a>
+        <a class="nav-item" data-nav href="diagnostics.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+          Diagnostics
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <a class="nav-item" href="login.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          Logout
+        </a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="main-header">
+        <div>
+          <h1>Scenario Workload Configurator</h1>
+          <p class="muted text-sm" style="margin:4px 0 0">Launchpad for modular k6 scenarios — volumes and VUs are freely adjustable.</p>
+        </div>
+        <div class="header-meta">
+          <span class="badge badge-idle">Target: Staging-GCP</span>
+        </div>
+      </div>
+
+      <div class="main-body">
+        <section class="card card-featured">
+          <h2 class="section-title">Modular scenario configuration</h2>
+          <p class="section-sub">Section 4.1 — enable modules, set target volume and concurrency (VUs).</p>
+
+          <div class="scenario-list">
+            <div class="scenario-row">
+              <input class="toggle" type="checkbox" checked aria-label="Enable Search Only" />
+              <div class="module-name">Search Only Module</div>
+              <div class="range-field">
+                <label class="label">Target volume (searches)</label>
+                <input type="range" min="1000" max="200000" step="1000" value="100000" data-suffix=" searches" />
+                <div class="range-meta"><span>1k</span><span data-range-value>100,000 searches</span><span>200k</span></div>
+              </div>
+              <div class="range-field">
+                <label class="label">Concurrency (VUs)</label>
+                <input type="range" min="50" max="3000" step="50" value="1200" data-suffix=" VUs" />
+                <div class="range-meta"><span>50</span><span data-range-value>1,200 VUs</span><span>3k</span></div>
+              </div>
+              <div class="weight">40%</div>
+            </div>
+
+            <div class="scenario-row">
+              <input class="toggle" type="checkbox" checked aria-label="Enable Booking Transactions" />
+              <div class="module-name">Booking Transactions</div>
+              <div class="range-field">
+                <label class="label">Target volume (commits)</label>
+                <input type="range" min="1000" max="200000" step="1000" value="100000" data-suffix=" commits" />
+                <div class="range-meta"><span>1k</span><span data-range-value>100,000 commits</span><span>200k</span></div>
+              </div>
+              <div class="range-field">
+                <label class="label">Concurrency (VUs)</label>
+                <input type="range" min="50" max="4000" step="50" value="2500" data-suffix=" VUs" />
+                <div class="range-meta"><span>50</span><span data-range-value>2,500 VUs</span><span>4k</span></div>
+              </div>
+              <div class="weight">35%</div>
+            </div>
+
+            <div class="scenario-row">
+              <input class="toggle" type="checkbox" checked aria-label="Enable Split &amp; Move" />
+              <div class="module-name">Split &amp; Move Ops</div>
+              <div class="range-field">
+                <label class="label">Target volume (ops)</label>
+                <input type="range" min="500" max="50000" step="500" value="15000" data-suffix=" ops" />
+                <div class="range-meta"><span>500</span><span data-range-value>15,000 ops</span><span>50k</span></div>
+              </div>
+              <div class="range-field">
+                <label class="label">Concurrency (VUs)</label>
+                <input type="range" min="20" max="1000" step="20" value="300" data-suffix=" VUs" />
+                <div class="range-meta"><span>20</span><span data-range-value>300 VUs</span><span>1k</span></div>
+              </div>
+              <div class="weight">5%</div>
+            </div>
+
+            <div class="scenario-row">
+              <input class="toggle" type="checkbox" checked aria-label="Enable PNR Sync Poller" />
+              <div class="module-name">PNR Sync Poller</div>
+              <div class="range-field">
+                <label class="label">Target volume (pollers)</label>
+                <input type="range" min="500" max="50000" step="500" value="10000" data-suffix=" pollers" />
+                <div class="range-meta"><span>500</span><span data-range-value>10,000 pollers</span><span>50k</span></div>
+              </div>
+              <div class="range-field">
+                <label class="label">Concurrency (VUs)</label>
+                <input type="range" min="20" max="1500" step="20" value="500" data-suffix=" VUs" />
+                <div class="range-meta"><span>20</span><span data-range-value>500 VUs</span><span>1.5k</span></div>
+              </div>
+              <div class="weight">5%</div>
+            </div>
+
+            <div class="scenario-row">
+              <input class="toggle" type="checkbox" checked aria-label="Enable Delete Flights / Cancel" />
+              <div class="module-name">Delete Flights / Cancel</div>
+              <div class="range-field">
+                <label class="label">Target volume (cancels)</label>
+                <input type="range" min="500" max="50000" step="500" value="20000" data-suffix=" cancels" />
+                <div class="range-meta"><span>500</span><span data-range-value>20,000 cancels</span><span>50k</span></div>
+              </div>
+              <div class="range-field">
+                <label class="label">Concurrency (VUs)</label>
+                <input type="range" min="20" max="1500" step="20" value="400" data-suffix=" VUs" />
+                <div class="range-meta"><span>20</span><span data-range-value>400 VUs</span><span>1.5k</span></div>
+              </div>
+              <div class="weight">15%</div>
+            </div>
+          </div>
+        </section>
+
+        <div class="grid-2">
+          <section class="card">
+            <h2 class="section-title">Ramp-up &amp; GKE settings</h2>
+            <p class="section-sub">Execution profile for the distributed k6 TestRun.</p>
+            <div class="form-grid">
+              <div>
+                <label class="label" for="ramp-profile">Ramp profile</label>
+                <select id="ramp-profile" class="select-field">
+                  <option>Step-Ramp to Breaking Point</option>
+                  <option>Linear Ramp</option>
+                  <option>Constant VUs</option>
+                  <option>Soak (12h)</option>
+                </select>
+              </div>
+              <div>
+                <label class="label" for="test-duration">Test duration</label>
+                <input id="test-duration" class="input-field" type="text" value="01h 00m 00s" />
+              </div>
+              <div>
+                <label class="label" for="max-vus">Max target VUs</label>
+                <input id="max-vus" class="input-field" type="text" value="4,900 VUs" />
+              </div>
+              <div>
+                <label class="label" for="max-pods">Max node scale</label>
+                <input id="max-pods" class="input-field" type="text" value="20 GKE Pods" />
+              </div>
+            </div>
+          </section>
+
+          <section class="card">
+            <h2 class="section-title">Safety circuit breakers</h2>
+            <p class="section-sub">Auto-abort thresholds for the control plane.</p>
+            <div class="form-grid">
+              <div>
+                <label class="label" for="max-error">Max ingestion error rate</label>
+                <select id="max-error" class="select-field">
+                  <option>5.0 %</option>
+                  <option>1.0 %</option>
+                  <option>2.5 %</option>
+                  <option>10.0 %</option>
+                </select>
+              </div>
+              <div>
+                <label class="label" for="max-pubsub">Max Pub/Sub backlog</label>
+                <input id="max-pubsub" class="input-field" type="text" value="50,000 msg" />
+              </div>
+              <div>
+                <label class="label" for="max-sync-lag">Max PNR sync lag</label>
+                <input id="max-sync-lag" class="input-field" type="text" value="60 sec" />
+              </div>
+            </div>
+            <div class="actions-row" style="margin-top:16px">
+              <button type="button" id="btn-dry-run" class="btn-secondary">Dry Run Test</button>
+              <button type="button" id="btn-launch" class="btn-primary">Launch Distributed Test</button>
+            </div>
+            <p id="launch-note" class="text-sm muted" style="margin:12px 0 0" role="status"></p>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="wireframe.js"></script>
+</body>
+</html>
